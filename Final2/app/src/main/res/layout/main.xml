@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.final2.Main">
+
+    <TextView
+        android:id="@+id/mainQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="What would you like to learn about?"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mainQuestion"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_margin="24dp"
+            android:onClick="goToHeight"
+            android:text=" your height" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_margin="24dp"
+            android:onClick="goToCommute"
+            android:text="your commute" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_margin="24dp"
+            android:onClick="goToFacts"
+            android:text="useless facts" />
+    </LinearLayout>
+
+
+</RelativeLayout>
